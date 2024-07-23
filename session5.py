@@ -19,11 +19,11 @@ def polygon_area(side_length, sides=3):
 
 def temp_converter(temp, temp_given_in='c'):
     if temp_given_in == 'c':
-         # Celsius to Fahrenheit
-        return (temp * 9/5) + 32 
+        # Celsius to Fahrenheit
+        return (temp * 9/5) + 32
     elif temp_given_in == 'f':
         # Fahrenheit to Celsius
-        return (temp - 32) * 5/9  
+        return (temp - 32) * 5/9
 
 def speed_converter(speed, dist='km', time='hr'):
     # Convert speed to km/h
@@ -44,7 +44,7 @@ def speed_converter(speed, dist='km', time='hr'):
         speed /= 24
     return speed
 
-# test calls
+# Test calls
 print(time_it(print, 1, 2, 3, sep='-', end=' ***\n', repetitions=5))
 print(time_it(squared_power_list, 2, start=0, end=5, repetitions=5))
 print(time_it(polygon_area, 15, sides=3, repetitions=10))
